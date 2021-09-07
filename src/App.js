@@ -1,6 +1,6 @@
 import './App.css';
-import About from './About';
-import Footer from './Footer';
+import About from './sections/About';
+import Footer from './sections/Footer';
 
 function App() {
 
@@ -16,6 +16,7 @@ function App() {
       <main>
         <About />
       </main>
+
       <footer>
         <Footer />
       </footer>
