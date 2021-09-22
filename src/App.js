@@ -1,6 +1,8 @@
 import './App.css';
 import About from './sections/About';
 import Footer from './sections/Footer';
+import Dashboard from './components/Dashboard/Dashboard';
+import Preferences from './components/Preferences/Preferences';
 
 function App() {
 
