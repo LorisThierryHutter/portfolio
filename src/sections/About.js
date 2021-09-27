@@ -1,6 +1,9 @@
 import React from 'react';
+import rick from '../rick.jpg';
+import '../App.css';
+import { SocialIcon } from 'react-social-icons';
 
-function About() {
+function About(setter) {
 
 
   function getAge(birthYear){
@@ -23,11 +26,38 @@ function About() {
     return difference[0];;
   }
 
-  var age = getAge();
+  let age = getAge();
+
+  const aboutText = ["My name is Loris, I am ", "Meine Name ist Loris, ich bin ", " years old.", " Jahre alt", "Current Occupation: ", "Momentane Beschäftigung"]
+  const occupation = ["2nd Year Apprenticeship in IT Application development EFZ", "2. Jahr Lehre Informatiker Applikationsentwickler EFZ"]
+  
 
   return (
     <div id="about">
-      <p>My name is Loris, I am { age } years old.</p>
+      <div className="container2">
+        <img src={rick} alt="Rickrolled" id="aboutImage" />
+
+        <ul style={{ textAlign: 'left' }}>
+          <li>
+            {aboutText[setter.language]} { age } {aboutText[setter.language+2]}
+          </li>
+          <li>
+            {aboutText[setter.language+4]} {occupation[setter.language]}
+          </li>
+        </ul>
+      </div>
+      
+      <p>Socials:</p>
+      <div className="container" id="socials">
+        <SocialIcon id="socialIcons" url="https://www.patreon.com/raccoongamestudios/creators" network="pinterest" />
+        <SocialIcon id="socialIcons" url="https://raccoongamestudios.itch.io/" />
+        <SocialIcon id="socialIcons" url="https://www.instagram.com/raccoon_game_studios/" />
+        <SocialIcon id="socialIcons" url="https://github.com/LorisThierryHuetter" />
+        <SocialIcon id="socialIcons" url="https://www.linkedin.com/in/loris-thierry-h%C3%BCtter-8276b5156/" />
+        <SocialIcon id="socialIcons" url="https://stackoverflow.com/users/14103392/loristhierryhuetter" />
+        <SocialIcon id="socialIcons" url="https://www.sololearn.com/profile/830484" />
+      </div>
+
     </div>
   );
 }

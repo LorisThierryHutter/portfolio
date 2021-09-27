@@ -5,7 +5,7 @@ import Home from './Sections/Home';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 import Experimenthome from './Components/Experiments/Experimenthome'
-import Navigation from './Components/Navigation';
+import { Navigation } from './Sections/Home';
 
 function App() {
 
