@@ -16,7 +16,7 @@ const defaultOptions = {
 
 function Preloader(){
 
-    const [completed, setcompleted] = useState(undefined);
+    const [completed, setcompleted] = useState(false);
 
 useEffect(() => {
     setTimeout(() =>{

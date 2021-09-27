@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import Preloader from './components/Preloader';
+import Preloader from './Components/Preloader';
 
 ReactDOM.render(
   <React.StrictMode>

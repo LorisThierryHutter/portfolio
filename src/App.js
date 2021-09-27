@@ -1,28 +1,26 @@
 import './App.css';
-import About from './sections/About';
-import Footer from './sections/Footer';
-import Dashboard from './components/Dashboard/Dashboard';
-import Preferences from './components/Preferences/Preferences';
+
+import Home from './Sections/Home';
+
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+import Experimenthome from './Components/Experiments/Experimenthome'
+import Navigation from './Components/Navigation';
 
 function App() {
 
 
+
   return (
-    <div className="App">
-      <header className="App-header">
-
-        <h1>Welcome to my portfolio</h1>
-
-      </header>
-
-      <main>
-        <About />
-      </main>
-
-      <footer>
-        <Footer />
-      </footer>
+    <BrowserRouter>
+    <div>
+      <Navigation />
+      <Switch>
+        <Route path="/" component={Home} exact />
+        <Route path="/Experimenthome" component={Experimenthome} />
+      </Switch>
     </div>
+  </BrowserRouter>
   );
 }
 
