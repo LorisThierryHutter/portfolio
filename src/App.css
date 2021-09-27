@@ -141,7 +141,12 @@ a:visited {
 .container {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   flex-wrap: wrap;
+}
+
+#skillbar {
+  margin-top: 40px;
+  min-width: 80vw;
 }
 

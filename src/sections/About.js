@@ -2,6 +2,7 @@ import React from 'react';
 import rick from '../rick.jpg';
 import '../App.css';
 import { SocialIcon } from 'react-social-icons';
+import { SkillBars } from 'react-skills';
 
 function About(setter) {
 
@@ -31,13 +32,27 @@ function About(setter) {
   const aboutText = ["My name is Loris, I am ", "Meine Name ist Loris, ich bin ", " years old.", " Jahre alt", "Current Occupation: ", "Momentane Beschäftigung"]
   const occupation = ["2nd Year Apprenticeship in IT Application development EFZ", "2. Jahr Lehre Informatiker Applikationsentwickler EFZ"]
   
+  // https://kevincastejon.github.io/react-skills/documentation/
+  const skillsData = [
+    {
+      name: 'ReactJS',
+      level: 100,
+      color: 'blue',
+      levelProgress: true,
+    },
+    {
+      name: 'SomeOtherTech',
+      level: 85,
+      color: 'red'
+    }
+  ]
 
   return (
     <div id="about">
       <div className="container2">
         <img src={rick} alt="Rickrolled" id="aboutImage" />
 
-        <ul style={{ textAlign: 'left' }}>
+        <ul style={{ textAlign: 'left', width: '40vw' }}>
           <li>
             {aboutText[setter.language]} { age } {aboutText[setter.language+2]}
           </li>
@@ -46,7 +61,11 @@ function About(setter) {
           </li>
         </ul>
       </div>
-      
+
+      <div id="skillbar">
+        <SkillBars  skills={skillsData} />
+      </div>
+
       <p>Socials:</p>
       <div className="container" id="socials">
         <SocialIcon id="socialIcons" url="https://www.patreon.com/raccoongamestudios/creators" bgColor="#FA6A56" fgColor="#ffffff" />
@@ -57,7 +76,6 @@ function About(setter) {
         <SocialIcon id="socialIcons" url="https://stackoverflow.com/users/14103392/loristhierryhuetter" bgColor="#E87A22" fgColor="#ffffff" />
         <SocialIcon id="socialIcons" url="https://www.sololearn.com/profile/830484" fgColor="#0A3267" bgColor="#E36F40" />
       </div>
-
     </div>
   );
 }
