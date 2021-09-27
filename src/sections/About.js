@@ -49,13 +49,13 @@ function About(setter) {
       
       <p>Socials:</p>
       <div className="container" id="socials">
-        <SocialIcon id="socialIcons" url="https://www.patreon.com/raccoongamestudios/creators" network="pinterest" />
-        <SocialIcon id="socialIcons" url="https://raccoongamestudios.itch.io/" />
-        <SocialIcon id="socialIcons" url="https://www.instagram.com/raccoon_game_studios/" />
-        <SocialIcon id="socialIcons" url="https://github.com/LorisThierryHuetter" />
-        <SocialIcon id="socialIcons" url="https://www.linkedin.com/in/loris-thierry-h%C3%BCtter-8276b5156/" />
-        <SocialIcon id="socialIcons" url="https://stackoverflow.com/users/14103392/loristhierryhuetter" />
-        <SocialIcon id="socialIcons" url="https://www.sololearn.com/profile/830484" />
+        <SocialIcon id="socialIcons" url="https://www.patreon.com/raccoongamestudios/creators" bgColor="#FA6A56" fgColor="#ffffff" />
+        <SocialIcon id="socialIcons" url="https://raccoongamestudios.itch.io/" fgColor="#ffffff" />
+        <SocialIcon id="socialIcons" url="https://www.instagram.com/raccoon_game_studios/" bgColor="#F03D5B" fgColor="#6266E1" />
+        <SocialIcon id="socialIcons" url="https://github.com/LorisThierryHuetter" fgColor="#ffffff" bgColor="#15181C" />
+        <SocialIcon id="socialIcons" url="https://www.linkedin.com/in/loris-thierry-h%C3%BCtter-8276b5156/" fgColor="#ffffff" />
+        <SocialIcon id="socialIcons" url="https://stackoverflow.com/users/14103392/loristhierryhuetter" bgColor="#E87A22" fgColor="#ffffff" />
+        <SocialIcon id="socialIcons" url="https://www.sololearn.com/profile/830484" fgColor="#0A3267" bgColor="#E36F40" />
       </div>
 
     </div>
