@@ -1,26 +1,26 @@
 import './App.css';
-import About from './sections/About';
-import Footer from './sections/Footer';
+
+import Home from './Sections/Home';
+
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+
+import Experimenthome from './Components/Experiments/Experimenthome'
+import { Navigation } from './Sections/Home';
 
 function App() {
 
 
+
   return (
-    <div className="App">
-      <header className="App-header">
-
-        <h1>Welcome to my portfolio</h1>
-
-      </header>
-
-      <main>
-        <About />
-      </main>
-
-      <footer>
-        <Footer />
-      </footer>
+    <BrowserRouter>
+    <div>
+      <Navigation />
+      <Switch>
+        <Route path="/" component={Home} exact />
+        <Route path="/Experimenthome" component={Experimenthome} />
+      </Switch>
     </div>
+  </BrowserRouter>
   );
 }
 
