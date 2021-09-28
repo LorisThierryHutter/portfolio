@@ -7,7 +7,7 @@ import { SkillBars } from 'react-skills';
 function About(setter) {
 
 
-  function getAge(birthYear){
+  function getAge(){
     const todayDate = new Date();
     const today = [todayDate.getFullYear(), todayDate.getMonth() + 1, todayDate.getDate()] // January is 0
     const year_born = [2002, 2, 15] 
@@ -29,22 +29,93 @@ function About(setter) {
 
   let age = getAge();
 
-  const aboutText = ["My name is Loris, I am ", "Meine Name ist Loris, ich bin ", " years old.", " Jahre alt", "Current Occupation: ", "Momentane Beschäftigung"]
+  const aboutText = ["#My name is Loris, I am", "#Mein Name ist Loris, ich bin", " years old.", " Jahre alt", "#Current Occupation: ", "#Momentane Beschäftigung"]
   const occupation = ["2nd Year Apprenticeship in IT Application development EFZ", "2. Jahr Lehre Informatiker Applikationsentwickler EFZ"]
-  
+  const skillExplanation = ["0% - 20%: Novice | 21% - 40%: Beginner | 41% - 60%: Intermediate | 61% - 80%: Advanced | 81% - 100%: Expert", "0% - 20%: Neueinsteiger | 21% - 40%: Anfänger | 41% - 60%: Mittleres Fähigkeitsniveau | 61% - 80%: Fortgeschritten | 81% - 100%: Experte"]
+
   // https://kevincastejon.github.io/react-skills/documentation/
   const skillsData = [
     {
       name: 'ReactJS',
-      level: 100,
-      color: 'blue',
+      level: 51,
+      color: '#5CD0EE',
       levelProgress: true,
     },
     {
-      name: 'SomeOtherTech',
-      level: 85,
-      color: 'red'
-    }
+      name: 'C++',
+      level: 8,
+      color: '#1D659C'
+    },
+    {
+      name: 'C#',
+      level: 28,
+      color: '#92458C'
+    },
+    {
+      name: 'HTML',
+      level: 55,
+      color: '#D84924'
+    },
+    {
+      name: 'CSS',
+      level: 59,
+      color: '#146CAD'
+    },
+    {
+      name: 'php',
+      level: 9,
+      color: '#7175AA'
+    },
+    {
+      name: 'CMD',
+      level: 55,
+      color: '#6FF003'
+    },
+    {
+      name: 'Python',
+      level: 60,
+      color: '#F29D00'
+    },
+    {
+      name: 'JavaScript',
+      level: 52,
+      color: '#EAD41C'
+    },
+    {
+      name: 'Java',
+      level: 45,
+      color: '#E97B18'
+    },
+    {
+      name: 'SQL',
+      level: 59,
+      color: '#006F88'
+    },
+    {
+      name: 'Wordpress',
+      level: 25,
+      color: '#1F6F92'
+    },
+    {
+      name: 'Git',
+      level: 34,
+      color: '#E44C30'
+    },
+    {
+      name: 'Linux',
+      level: 52,
+      color: '#D24413'
+    },
+    {
+      name: 'Metasploit',
+      level: 12,
+      color: '#0B72B0'
+    },
+    {
+      name: 'MSDOS',
+      level: 18,
+      color: '#7A007A'
+    },
   ]
 
   return (
@@ -52,7 +123,7 @@ function About(setter) {
       <div className="container2">
         <img src={rick} alt="Rickrolled" id="aboutImage" />
 
-        <ul style={{ textAlign: 'left', width: '40vw' }}>
+        <ul id="aboutme">
           <li>
             {aboutText[setter.language]} { age } {aboutText[setter.language+2]}
           </li>
@@ -63,7 +134,9 @@ function About(setter) {
       </div>
 
       <div id="skillbar">
-        <SkillBars  skills={skillsData} />
+        <p>Skills: </p>
+        <p style={{fontSize: '18px'}} > { skillExplanation[setter.language] } </p>
+        <SkillBars spacing={20} skills={skillsData} />
       </div>
 
       <p>Socials:</p>

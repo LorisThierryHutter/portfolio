@@ -147,6 +147,11 @@ a:visited {
 
 #skillbar {
   margin-top: 40px;
-  min-width: 80vw;
+  min-width: 60vw;
 }
 
+#aboutme {
+  list-style-type: none;
+  text-align: left;
+  width: 60vw;
+}
