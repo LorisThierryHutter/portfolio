@@ -43,12 +43,12 @@ function About(setter) {
     },
     {
       name: 'C++',
-      level: 8,
+      level: 9,
       color: '#1D659C'
     },
     {
       name: 'C#',
-      level: 28,
+      level: 32,
       color: '#92458C'
     },
     {
@@ -60,16 +60,6 @@ function About(setter) {
       name: 'CSS',
       level: 59,
       color: '#146CAD'
-    },
-    {
-      name: 'php',
-      level: 9,
-      color: '#7175AA'
-    },
-    {
-      name: 'CMD',
-      level: 55,
-      color: '#6FF003'
     },
     {
       name: 'Python',
@@ -110,11 +100,6 @@ function About(setter) {
       name: 'Metasploit',
       level: 12,
       color: '#0B72B0'
-    },
-    {
-      name: 'MSDOS',
-      level: 18,
-      color: '#7A007A'
     },
   ]
 
