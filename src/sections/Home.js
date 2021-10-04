@@ -1,6 +1,7 @@
 import '../App.css';
 import About from './About';
 import Footer from './Footer';
+import Projects from './Projects';
 
 import { NavLink } from 'react-router-dom';
 import { useState } from 'react';
@@ -40,6 +41,7 @@ const Home = () => {
 
       <main>
         <About language={languageSwitcher%2} />
+        <Projects language={languageSwitcher%2} />
       </main>
 
       <footer>
