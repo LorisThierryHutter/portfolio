@@ -6,5 +6,6 @@
 * 'react-router-dom'
 * 'react-social-icons'
 * 'react-skills'
+* 'reactjs-popup'
 ## Notice:  
 ### 'componentWillUpdate' in '\node_modules\react-lottie\dist\index.js' has been removed, to remove warning in console 

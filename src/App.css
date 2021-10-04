@@ -169,6 +169,8 @@ a:visited {
   width: 60vw;
 }
 
+/* Footer Made With info */
+
 #madewith {
   list-style-type: none;
   text-align: left;
@@ -176,6 +178,8 @@ a:visited {
   font-family: monospace;
 }
 
+
+/* Projects */
 
 #card_wrapper {
   margin: 2rem;
@@ -192,8 +196,6 @@ a:visited {
   display: flex;
   padding: 10px;
 }
-
-
 
 .card_img {
   width: 25vw;
@@ -249,3 +251,58 @@ a:visited {
     object-fit: cover;
   }
 }
+
+/* Modals Popup */
+
+.modal {
+  font-size: 1.4rem;
+  color: white;
+  background-color: rgba(165, 103, 11, 0.911);
+  border-radius: 20px;
+}
+
+.modal > .header {
+  width: 100%;
+  border-bottom: 1px solid rgb(235, 171, 76);
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 5px;
+}
+
+.modal > .content {
+  width: 80vw;
+  padding: 10px 6vw;
+}
+
+.modal > .actions {
+  width: 100%;
+  padding: 10px 5px;
+  margin: auto;
+  text-align: center;
+}
+
+.modal > .close {
+  cursor: pointer;
+  position: absolute;
+  display: block;
+  padding: 2px 5px;
+  line-height: 20px;
+  right: -10px;
+  top: -10px;
+  font-size: 24px;
+  background: #ffffff;
+  border-radius: 18px;
+  border: 1px solid #cfcece;
+}
+
+#projectsLink {
+  color: white;
+}
+
+
+
+
+
+
+
+
