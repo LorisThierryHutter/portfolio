@@ -89,14 +89,69 @@ a:visited {
 }
 
 #navigation {
-  background-color: #282c34;
+  background-color: transparent;
+  color: white;
   text-align: center;
   font-size: 16px;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+
+#settings {
+  height: 4vw;
+  max-height: 50px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 750px){
+  #settings {
+    height: 4vh;
+    cursor: pointer;
+  }
+}
+
+#languageIcon {
+  height: 4vw;
+  max-height: 50px;
+  cursor: pointer;
+  right: 2rem;
+  top: 2rem;
+}
+
+@media screen and (max-width: 750px){
+  #languageIcon {
+    height: 4vh;
+    cursor: pointer;
+  }
+}
+
+.navmenu {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(28, 168, 248);
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.navmenu-item {
+  cursor: pointer;
+  padding: 5px;
+  height: 28px;
+  border-bottom: 1px solid #3f7da0;
+}
+
+.navmenu-item:hover {
+  color: #2980b9;
 }
 
 #NavLink {
-  margin: 20px;
-  font-size: 16px;
+  margin: 0.4rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+
 }
 
 #languages {
@@ -106,12 +161,23 @@ a:visited {
   font-size: 16px;
   text-decoration: underline;
   cursor: pointer;
-  margin-top: 0;
   position: absolute; 
-  top: 10px; 
-  right: 0; 
+  top: 1rem; 
+  left: 0; 
   text-align:right;
-  padding: 15px;
+  margin: 15px;
+}
+
+#nobutton {
+  background: none;
+  color: white;
+	border: none;
+  width: auto;
+  text-align: center;
+	font: inherit;
+	cursor: pointer;
+  margin: 0.4rem;
+  padding: 0;
 }
 
 @media screen and (min-width: 700px){

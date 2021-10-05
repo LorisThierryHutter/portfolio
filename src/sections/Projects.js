@@ -64,7 +64,7 @@ function Projects(setter) {
                     date="8th of March 2020"
                     link={Corona}
                     language={setter.language}
-                    type="download"
+                    type="game"
                 />
             </div>
             </div>
@@ -127,7 +127,7 @@ function ProjectPopup(props){
                 <div className="modal">
                     <div className="header">
                         <h2> { props.project } </h2>
-                        <img className="popupImage" src={props.img} />
+                        <img className="popupImage" src={props.img} alt={props.project} />
                     </div>
                     <div className="content">
                         {' '}

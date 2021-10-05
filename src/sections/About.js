@@ -110,10 +110,10 @@ function About(setter) {
 
         <ul id="aboutme">
           <li>
-            {aboutText[setter.language]} { age } {aboutText[setter.language+2]}
+            {aboutText[setter.language]} { age } {aboutText[setter.language+setter.languageAmmount]}
           </li>
           <li>
-            {aboutText[setter.language+4]} {occupation[setter.language]}
+            {aboutText[setter.language+setter.languageAmmount*2]} {occupation[setter.language]}
           </li>
         </ul>
       </div>
