@@ -169,6 +169,8 @@ a:visited {
   width: 60vw;
 }
 
+/* Footer Made With info */
+
 #madewith {
   list-style-type: none;
   text-align: left;
@@ -176,6 +178,8 @@ a:visited {
   font-family: monospace;
 }
 
+
+/* Projects */
 
 #card_wrapper {
   margin: 2rem;
@@ -192,8 +196,6 @@ a:visited {
   display: flex;
   padding: 10px;
 }
-
-
 
 .card_img {
   width: 25vw;
@@ -249,3 +251,65 @@ a:visited {
     object-fit: cover;
   }
 }
+
+/* Modals Popup */
+
+.modal {
+  font-size: 1.4rem;
+  color: white;
+  background-color: rgba(165, 103, 11, 0.911);
+  border-radius: 20px;
+}
+
+.modal > .header {
+  width: 90vw;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 5px;
+}
+
+.modal > .content {
+  border-top: 1px solid rgb(235, 171, 76);
+  width: 80vw;
+  padding: 10px 7vw;
+  text-align: center;
+}
+
+.modal > .actions {
+  width: 100%;
+  padding: 10px 0px;
+  margin: auto;
+  text-align: center;
+}
+
+.card_btn_popup {
+  border: none;
+  border-top: 1px solid gray;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  color: inherit;
+  width: 80vw;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.popupImage {
+  max-width: 40vw;
+  max-height: 40vw;
+  min-width: 20vw;
+}
+
+#projectsLink {
+  color: white;
+}
+
+
+
+
+
+
+
+
