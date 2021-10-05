@@ -262,37 +262,44 @@ a:visited {
 }
 
 .modal > .header {
-  width: 100%;
-  border-bottom: 1px solid rgb(235, 171, 76);
+  width: 90vw;
   font-size: 1.8rem;
   text-align: center;
   padding: 5px;
 }
 
 .modal > .content {
+  border-top: 1px solid rgb(235, 171, 76);
   width: 80vw;
-  padding: 10px 6vw;
+  padding: 10px 7vw;
+  text-align: center;
 }
 
 .modal > .actions {
   width: 100%;
-  padding: 10px 5px;
+  padding: 10px 0px;
   margin: auto;
   text-align: center;
 }
 
-.modal > .close {
+.card_btn_popup {
+  border: none;
+  border-top: 1px solid gray;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  color: inherit;
+  width: 80vw;
+  padding-top: 1rem;
+  margin-top: 1rem;
   cursor: pointer;
-  position: absolute;
-  display: block;
-  padding: 2px 5px;
-  line-height: 20px;
-  right: -10px;
-  top: -10px;
-  font-size: 24px;
-  background: #ffffff;
-  border-radius: 18px;
-  border: 1px solid #cfcece;
+}
+
+.popupImage {
+  max-width: 40vw;
+  max-height: 40vw;
+  min-width: 20vw;
 }
 
 #projectsLink {

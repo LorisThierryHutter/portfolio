@@ -87,6 +87,7 @@ function Card(props){
                     link={props.link}
                     type={props.type}
                     tags={props.tags}
+                    img={props.img}
                 />
             </div>
         </div>
@@ -118,16 +119,16 @@ function ProjectPopup(props){
 
     return(
         <Popup 
-            trigger={<button className="card_btn"> { props.project } </button>} 
+            trigger={<button className="card_btn"> View { props.project } </button>} 
             modal
             nested
         >
             {close => (
                 <div className="modal">
-                    <button className="close" onClick={close}>
-                        &times;
-                    </button>
-                    <div className="header"><h2> { props.project } </h2></div>
+                    <div className="header">
+                        <h2> { props.project } </h2>
+                        <img className="popupImage" src={props.img} />
+                    </div>
                     <div className="content">
                         {' '}
                         { props.descriptionLong }
@@ -135,7 +136,7 @@ function ProjectPopup(props){
                     <div className="actions">
                         { redirect }
                         <button
-                            className="card_btn"
+                            className="card_btn_popup"
                             onClick={() => {
                                 console.log('modal closed ');
                                 close();
