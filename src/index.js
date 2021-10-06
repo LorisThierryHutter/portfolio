@@ -5,9 +5,11 @@ import reportWebVitals from './reportWebVitals';
 import Preloader from './Components/Preloader';
 
 ReactDOM.render(
+  <div id="scrollbar">
   <React.StrictMode>
     <Preloader />
-  </React.StrictMode>,
+  </React.StrictMode>
+  </div>,
   document.getElementById('root')
 );
 
