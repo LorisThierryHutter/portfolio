@@ -38,6 +38,7 @@ const Home = () => {
     const language = ['English', 'Deutsch'];
     const languageAmmount = language.length;
     const welcome = ["Welcome to my portfolio page, my name is ", "Willkommen zu meiner Portfolio Seite, mein Name ist "]
+    const construction = ["This site is currently under construction. More content and improvements coming soon...", "Diese Seite ist momentan in Bearbeitung. Weitere Inhalte und Verbesserungen kommen bald..."]
 
     const [activeLanguage, setActiveLanguage] = useState(0)
 
@@ -69,7 +70,7 @@ const Home = () => {
           </Popup>
         </div>
         <h1 id="welcome">{welcome[activeLanguage]} Loris H&#252;tter</h1>
-
+        <h3> {construction[activeLanguage]} </h3>
       </header>
 
       <main>

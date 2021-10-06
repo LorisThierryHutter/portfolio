@@ -4,7 +4,7 @@ import '../../App.css';
  const Experimenthome = () => {
     return (
         <div className="App-header">
-            <p>Experimentpagepoggers</p>
+            <p>Experimental Components and React Projects will be added here...</p>
         </div>
     )
 }
