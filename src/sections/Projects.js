@@ -1,8 +1,8 @@
 import React from 'react';
 import Corona from '../piskelcoronavirus.png';
-import RovingShade from '../roving_shade.png';
-import Otherside from '../otherside.png';
-import KingdomsDemise from '../kingdoms_demise.jpg';
+import RovingShade from '../roving_shade.webp';
+import Otherside from '../otherside.webp';
+import KingdomsDemise from '../kingdoms_demise.webp';
 import Popup from 'reactjs-popup';
 import '../App.css';
 

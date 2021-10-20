@@ -1,5 +1,5 @@
 import React from 'react';
-import rick from '../rick.jpg';
+import rick from '../rick.webp';
 import '../App.css';
 import { SocialIcon } from 'react-social-icons';
 import { SkillBars } from 'react-skills';
