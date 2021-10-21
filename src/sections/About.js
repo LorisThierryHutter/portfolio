@@ -1,5 +1,5 @@
 import React from 'react';
-import rick from '../rick.jpg';
+import rick from '../rick.webp';
 import '../App.css';
 import { SocialIcon } from 'react-social-icons';
 import { SkillBars } from 'react-skills';
@@ -110,10 +110,10 @@ function About(setter) {
 
         <ul id="aboutme">
           <li>
-            {aboutText[setter.language]} { age } {aboutText[setter.language+2]}
+            {aboutText[setter.language]} { age } {aboutText[setter.language+setter.languageAmmount]}
           </li>
           <li>
-            {aboutText[setter.language+4]} {occupation[setter.language]}
+            {aboutText[setter.language+setter.languageAmmount*2]} {occupation[setter.language]}
           </li>
         </ul>
       </div>

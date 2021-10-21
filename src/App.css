@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  padding: 20px;
+
 }
 
 .App-logo {
@@ -89,14 +91,69 @@ a:visited {
 }
 
 #navigation {
-  background-color: #282c34;
+  background-color: transparent;
+  color: white;
   text-align: center;
   font-size: 16px;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+
+#settings {
+  height: 4vw;
+  max-height: 50px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 750px){
+  #settings {
+    height: 4vh;
+    cursor: pointer;
+  }
+}
+
+#languageIcon {
+  height: 4vw;
+  max-height: 50px;
+  cursor: pointer;
+  right: 2rem;
+  top: 2rem;
+}
+
+@media screen and (max-width: 750px){
+  #languageIcon {
+    height: 4vh;
+    cursor: pointer;
+  }
+}
+
+.navmenu {
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  background-color: #765423;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+.navmenu-item {
+  cursor: pointer;
+  padding: 5px;
+  height: 28px;
+  border-bottom: 1px solid #4F402C; /* Nice Blue #3f7da0 */
+}
+
+.navmenu-item:hover {
+  color: #2980b9;
 }
 
 #NavLink {
-  margin: 20px;
-  font-size: 16px;
+  margin: 0.4rem;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+
 }
 
 #languages {
@@ -106,12 +163,23 @@ a:visited {
   font-size: 16px;
   text-decoration: underline;
   cursor: pointer;
-  margin-top: 0;
   position: absolute; 
-  top: 10px; 
-  right: 0; 
+  top: 1rem; 
+  left: 1rem; 
   text-align:right;
-  padding: 15px;
+  margin: 15px;
+}
+
+#nobutton {
+  background: none;
+  color: white;
+	border: none;
+  width: auto;
+  text-align: center;
+	font: inherit;
+	cursor: pointer;
+  margin: 0.4rem;
+  padding: 0;
 }
 
 @media screen and (min-width: 700px){
@@ -169,6 +237,8 @@ a:visited {
   width: 60vw;
 }
 
+/* Footer Made With info */
+
 #madewith {
   list-style-type: none;
   text-align: left;
@@ -176,6 +246,8 @@ a:visited {
   font-family: monospace;
 }
 
+
+/* Projects */
 
 #card_wrapper {
   margin: 2rem;
@@ -188,12 +260,10 @@ a:visited {
 .card {
   border: solid 2px rgb(196, 124, 17);
   border-radius: 25px;
-  min-width: 90vw;
+  min-width: 80vw;
   display: flex;
   padding: 10px;
 }
-
-
 
 .card_img {
   width: 25vw;
@@ -249,3 +319,65 @@ a:visited {
     object-fit: cover;
   }
 }
+
+/* Modals Popup */
+
+.modal {
+  font-size: 1.4rem;
+  color: white;
+  background-color: rgba(165, 103, 11, 0.911);
+  border-radius: 20px;
+}
+
+.modal > .header {
+  width: 90vw;
+  font-size: 1.8rem;
+  text-align: center;
+  padding: 5px;
+}
+
+.modal > .content {
+  border-top: 1px solid rgb(235, 171, 76);
+  width: 80vw;
+  padding: 10px 7vw;
+  text-align: center;
+}
+
+.modal > .actions {
+  width: 100%;
+  padding: 10px 0px;
+  margin: auto;
+  text-align: center;
+}
+
+.card_btn_popup {
+  border: none;
+  border-top: 1px solid gray;
+  background-color: transparent;
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  color: inherit;
+  width: 80vw;
+  padding-top: 1rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.popupImage {
+  max-width: 40vw;
+  max-height: 40vw;
+  min-width: 20vw;
+}
+
+#projectsLink {
+  color: white;
+}
+
+
+
+
+
+
+
+
